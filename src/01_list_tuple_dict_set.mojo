@@ -74,11 +74,11 @@ fn set_function() raises:
 
 
 fn main() raises:
-    print('List\n--------------------')
+    print("List\n--------------------")
     list_function()
-    print('\nTuple\n--------------------')
+    print("\nTuple\n--------------------")
     tuple_function()
-    print('\nDict\n--------------------')
+    print("\nDict\n--------------------")
     dict_function()
-    print('\nSet\n--------------------')
+    print("\nSet\n--------------------")
     set_function()
