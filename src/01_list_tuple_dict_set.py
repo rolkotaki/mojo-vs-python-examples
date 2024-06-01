@@ -26,6 +26,9 @@ def tuple_function():
     print("First element:", t[0])
     print("Second element:", t[1])
 
+    if 1 in t:
+        print("1 is in t")
+
 
 def dict_function():
     d = {}
