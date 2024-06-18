@@ -7,3 +7,4 @@ As I go on discovering a new topic each time, I will summarize the learnings in 
 [Mojo vs Python: Comparison with Examples - Part I: List, Tuple, Dict and Set](https://rolkotech.blogspot.com/2024/06/mojo-vs-python-comparison-with-examples-list-tuple-dict-set.html)
 
 Starting Mojo version: 24.3.0
+Current Mojo version: 24.4.0
