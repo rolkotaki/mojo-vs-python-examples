@@ -2,7 +2,7 @@
 fn read_file_content() raises:
     # writing to the file
     with open("input/input.txt", 'w') as f:
-        f.write("Mojo\nis\nthe\nbest")
+        f.write(String("Mojo\nis\nthe\nbest"))
 
     # reading the file
     var file_content: String = String()
