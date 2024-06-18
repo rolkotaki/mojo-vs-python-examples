@@ -6,6 +6,9 @@ def list_function():
     l.insert(2, 3)
     l[2] = 5
 
+    if 5 in l:
+        print("5 is an element of l, it is present " + str(l.count(5)) + " time(s)")
+
     print("Loop by index:")
     for i in range(len(l)):
         print(l[i])
@@ -55,6 +58,8 @@ def dict_function():
         print(key, ":", value)
 
     print("Length:", len(d))
+    d.clear()
+    print("Length after clear:", len(d))
 
 
 def set_function():
@@ -64,6 +69,7 @@ def set_function():
     s.remove(3)
     if 4 in s:
         print("The set contains 4.")
+    
     print("Pop:", s.pop())
 
     s2 = {1, 3}

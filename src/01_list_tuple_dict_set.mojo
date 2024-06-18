@@ -8,6 +8,9 @@ fn list_function():
     l.insert(2, 3)
     l[2] = 5
 
+    if 5 in l:
+        print("5 is an element of l, it is present " + str(l.count(5)) + " time(s)")
+
     print("Loop by index:")
     for i in range(len(l)):
         print(l[i])
@@ -28,6 +31,9 @@ fn tuple_function():
     print("First element:", t.get[0, Int]())
     print("Second element:", t.get[1, StringLiteral]())
 
+    if 1 in t:
+        print("1 is in t")
+
 
 fn dict_function() raises:
     var d: Dict[String, Int] = Dict[String, Int]()
@@ -43,6 +49,9 @@ fn dict_function() raises:
 
     if d.__contains__("second"):
         print("The dictionary has the key 'second'.")
+    # since 24.4.0
+    if "second" in d:
+        print("The dictionary has the key 'second'.")
 
     print("Keys:")
     for key in d.keys():
@@ -55,6 +64,8 @@ fn dict_function() raises:
         print(item[].key, ":", item[].value)
 
     print("Length:", len(d))
+    d.clear()
+    print("Length after clear:", len(d))
 
 
 fn set_function() raises:
@@ -64,6 +75,10 @@ fn set_function() raises:
     s.remove(3)
     if s.__contains__(4):
         print("The set contains 4.")
+    # since 24.4.0
+    if 4 in s:
+        print("The set contains 4.")
+
     print("Pop:", s.pop())
 
     var s2: Set[Int] = Set[Int](1, 3)
