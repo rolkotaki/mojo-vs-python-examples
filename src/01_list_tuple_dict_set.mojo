@@ -1,4 +1,5 @@
 from collections import Set
+from collections.dict import Dict
 
 
 fn list_function():

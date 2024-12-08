@@ -1,3 +1,5 @@
+from collections.dict import Dict
+
 
 struct Car:
 
@@ -32,9 +34,9 @@ struct Car:
 fn main() raises:
     # Honda Civic
     var car1: Car = Car('Honda', 'Civic', 2000, 'green')
-    print(car1)
+    print(str(car1))
     car1.update_color('grey')
-    print(car1)
+    print(str(car1))
 
     # Toyota Corolla
     var toyota_corolla: Dict[String, String] = Dict[String, String]()
@@ -43,5 +45,5 @@ fn main() raises:
     toyota_corolla['year'] = '2018'
     toyota_corolla['color'] = 'black'
     var car2: Car = Car.create_from_dict(toyota_corolla)
-    print(car2)
+    print(str(car2))
     print(car2.get_year())

@@ -1,2 +1,8 @@
 .vscode
 .DS_Store
+
+# pixi environments
+.pixi
+*.egg-info
+# magic environments
+.magic
