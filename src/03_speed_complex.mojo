@@ -5,7 +5,7 @@ struct Complex:
 	var real: Int
 	var imaginary: Int
   
-	fn __init__(inout self, real: Int, imaginary: Int):
+	fn __init__(out self, real: Int, imaginary: Int):
 		self.real = real
 		self.imaginary = imaginary
   

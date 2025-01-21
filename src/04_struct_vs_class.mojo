@@ -8,7 +8,7 @@ struct Car:
     var year: Int16
     var color: String
 
-    fn __init__(inout self, brand: String, model: String, year: Int16, 
+    fn __init__(out self, brand: String, model: String, year: Int16, 
                 color: String):
         self.brand = brand
         self.model = model
@@ -22,7 +22,7 @@ struct Car:
     fn get_year(self) -> Int16:
         return self.year
     
-    fn update_color(inout self, color: String):
+    fn update_color(mut self, color: String):
         self.color = color
 
     @staticmethod

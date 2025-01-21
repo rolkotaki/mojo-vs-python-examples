@@ -31,12 +31,12 @@ fn string_function() raises:
     print("First 'b' from the right:", s1.rfind('b', 0))
     print(s1.replace('c', 'x'))
 
-    print(s2.strip())
-    print(s2.rstrip())
-    print(s2.strip().upper())
-    print(s2.strip().lower())
+    print(str(s2.strip()))
+    print(str(s2.rstrip()))
+    print(str(s2.strip()).upper())
+    print(str(s2.strip()).lower())
 
-    var s2_words: List[String] = s2.strip().split(' ')
+    var s2_words: List[String] = str(s2.strip()).split(' ')
     for word in s2_words:
         if word[].startswith("ha"):
             print("HAPPY")

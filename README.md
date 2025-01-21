@@ -10,4 +10,4 @@ As I go on discovering a new topic each time, I will summarize the learnings in 
 [Mojo vs Python: Comparison with Examples - Part IV: Struct vs Class](https://rolkotech.blogspot.com/2024/12/mojo-vs-python-comparison-struct-vs-class.html)
 
 Starting Mojo version: 24.3.0
-Current Mojo version: 24.5.0
+Current Mojo version: 24.6.0
